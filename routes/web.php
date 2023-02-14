@@ -57,9 +57,8 @@ Route::view('/fail', 'fail');
 
 Route::resource('forms', FormController::class);
 
-Route::get('form', function () {
-    return view('checkout/index');
-});
+Route::resource('checkout', CheckoutController::class);
+
 
 // Start Admin Route
 

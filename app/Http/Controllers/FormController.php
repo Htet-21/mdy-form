@@ -45,8 +45,8 @@ class FormController extends Controller
     
         Form::create($request->all());
      
-        return redirect()->route('forms.index')
-                        ->with('success','User Added successfully.');
+        return redirect()->route('checkout.index')
+                        ->with('success','Registered successfully.');
                         
     }
 

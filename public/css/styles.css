@@ -4,6 +4,9 @@
 a {
     text-decoration: none;
 }
+#dude {
+    display: none;
+}
 .brand-logo {
     width: auto;
     float: none;
@@ -17,12 +20,17 @@ a {
     float: left;
     padding-top: 0;
     height: 70px;
+    margin-left: -80px;
 }
 header {
     height: auto;
     overflow: hidden;
     width: 100%;
     padding: 0;
+}
+
+#main {
+    overflow-x: hidden;
 }
 
 #qr-div {
@@ -34,6 +42,21 @@ header {
 /* End Header */
 
 /* Start Form page */
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    background-color: #ffffff;
+    width: 100%;
+    height: 90px;
+    transition: all 0.15s linear;
+    box-shadow: 0px 10px 35px rgb(0 0 0 / 5%);
+    overflow: hidden;
+}
+
+#top-section{
+    overflow: hidden;
+}
 
 body {
     overflow-x: hidden;
@@ -43,7 +66,13 @@ body {
 a {
     color: #000000 !important;
     text-decoration: none !important;
+    font-family: 'poppins';
     background-color: transparent;
+}
+a:hover {
+    color: #000000 !important;
+    font-weight: bolder !important;
+    text-decoration: underline #FFB800 !important;
 }
 
 #yttc-form-div {
@@ -95,6 +124,55 @@ main {
     font-size: 46px;
     line-height: 65px;
     text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.footer-content {
+    width: max-content;
+    display: block;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#facebook {
+    width: 55px;
+}
+#linked {
+    width: 57px;
+    margin-right: 40px;
+    margin-left: 30px;
+}
+#web {
+    width: 45px;
+}
+.footer-content img{
+    width: 40px;
+}
+.footer-content2 {
+    width: 240px;
+    display: block;
+    overflow: hidden;
+    margin: auto;
+}
+.footer-block {
+    width: max-content;
+    display: block;
+    overflow: hidden;
+    margin: auto;
+}
+.container-footer {
+    width: auto;
+    text-align: center;
+    display: block;
+    background-color: #323232;
+    overflow: hidden;
+    margin: auto;
+    height: 85px;
+}
+#address {
+    margin-top: 40px;
+    font-family: 'Poppins';
+    color: white;
 }
 #mdy-p {
     font-family: 'poppins';
@@ -110,6 +188,7 @@ main {
     display: block;
     overflow: hidden;
     margin: auto;
+    margin-top: 130px;
 }
 .mid-content{
     width: max-content;
@@ -210,7 +289,7 @@ span {
 }
 .hider {
     font-family: poppins;
-    margin-left: 850px;
+    margin-left: 915px;
     margin-top: 30px;
 }
 #nav {
@@ -270,7 +349,84 @@ span {
 @media(max-width:767px){
     #yttc-form-div {
         width: 320px!important;
+        margin-left: 75px !important;
+        margin-block-start: auto;
     }
+    .hider {
+        font-family: poppins;
+        margin-left: 95px;
+        margin-top: 20px;
+    }
+    .brand-logo img {
+        width: auto;
+        float: left;
+        margin-left: 20px;
+        padding-top: 0;
+        height: 60px;
+    }
+    #chat {
+        width: 200px;
+        margin-left: 120px;
+    }
+    .top-content {
+        width: auto;
+        display: block;
+        overflow: hidden;
+        margin: auto;
+        margin-top: 130px;
+    }
+    #mdy-title {
+        font-family: 'poppins';
+        font-style: normal;
+        font-weight: 550;
+        font-size: 35px;
+        line-height: 55px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+    #mdy-p {
+        font-family: 'poppins';
+        font-style: normal;
+        font-size: 16px;
+        line-height: 33px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+    #map {
+        width: 700px;
+        margin-left: -150px;
+        margin-top: -90px;
+    }
+    .mid-content {
+        width: auto;
+        display: block;
+        overflow: hidden;
+        margin: auto;
+        margin-top: -110px;
+    }
+    .mid-content img {
+        width: 515px;
+    }
+    .mid-text {
+        padding: 30px;
+        align-content: center;
+        flex-direction: column;
+        vertical-align: middle;
+        display: flex;
+        align-items: normal;
+    }
+    #dude {
+        margin-top: 40px;
+        display: inherit;
+        width: 390px;
+        margin-bottom: 50px;
+    }
+    #person {
+        display: none;
+    }
+
 }
 
 /* End Responsive */
